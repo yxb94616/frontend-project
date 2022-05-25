@@ -8,6 +8,13 @@ import ElementPlus from "unplugin-element-plus/vite";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  test: {
+    globals: true,
+    environment: "jsdom",
+    transformMode: {
+      web: [/.[tj]sx$/],
+    },
+  },
   plugins: [vue(), vueJsx(), ElementPlus(), viteCompression()],
   resolve: {
     alias: {
