@@ -17,8 +17,8 @@ import HelloWorld from "@/components/HelloWorld.vue";
       <HelloWorld msg="You did it!" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
+        <RouterLink to="/" class="text-2xl">Home</RouterLink>
+        <RouterLink to="/about" class="text-2xl">About</RouterLink>
       </nav>
     </div>
   </header>
@@ -27,8 +27,6 @@ import HelloWorld from "@/components/HelloWorld.vue";
 </template>
 
 <style>
-@import "@/assets/base.css";
-
 #app {
   max-width: 1280px;
   margin: 0 auto;
