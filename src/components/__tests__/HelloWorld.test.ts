@@ -4,7 +4,7 @@ import HelloWorld from "./../HelloWorld";
 
 const greenAttr = "[data-test='green']";
 
-test("HelloWorld components", () => {
+test("HelloWorld component", () => {
   const wrapper = mount(HelloWorld, {
     props: {
       msg: "world",

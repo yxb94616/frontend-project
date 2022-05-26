@@ -1,0 +1,25 @@
+import { defineComponent, ref, watchEffect } from "vue";
+
+export default defineComponent({
+  name: "TestComponent",
+  props: {
+    value: String,
+  },
+  emits: ["update:value"],
+  setup(props, { emit }) {
+    const local = ref("");
+
+    watchEffect(() => {
+      emit("update:value", local);
+    });
+    watchEffect(() => {
+      local.value = props.value!;
+    });
+
+    return () => (
+      <a-select v-model={[local.value, "value"]}>
+        <a-select-option value="aaa">aaa</a-select-option>
+      </a-select>
+    );
+  },
+});
