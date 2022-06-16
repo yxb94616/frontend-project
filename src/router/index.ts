@@ -22,6 +22,11 @@ const router = createRouter({
       name: "todo",
       component: () => import("@/views/todo/TodoView"),
     },
+    {
+      path: "/flip",
+      name: "flip",
+      component: () => import("@/views/flip/FlipView"),
+    },
   ],
 });
 
