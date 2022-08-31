@@ -1,4 +1,4 @@
-![RNG](rng.jpg "ROYAL NEVER GIVE UP")
+![ROYAL NEVER GIVE UP](rng.jpg "ROYAL NEVER GIVE UP")
 
 # 必看！！！🧨🧨🧨
 
